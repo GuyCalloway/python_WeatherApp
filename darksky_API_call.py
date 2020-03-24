@@ -1,3 +1,5 @@
+import requests
+import json
 
 
 def forecast(darksky_key, lat_lon_tuple, exclude):
