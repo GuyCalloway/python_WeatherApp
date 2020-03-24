@@ -4,9 +4,10 @@ from keys import *
 
 exclude = 'minutely, hourly, daily, alerts, flags'
 lat_lon_tuple = (-79.3892455, 43.6425701)
-location = "Cambridge"
+location = "CB215NX"
 
-data1 = find_lat_and_lon(location, googlemaps_key)
-data2 = forecast(darksky_key, lat_lon_tuple, exclude)
+lat_lon = find_lat_and_lon(location, googlemaps_key)
+forecast_data = forecast(darksky_key, lat_lon, exclude)
 
-print(data1)
+print(lat_lon)
+print(forecast_data)
